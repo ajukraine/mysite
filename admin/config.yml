@@ -10,11 +10,11 @@ collections:
     files: 
       - name: "home"
         label: "Home page"
-        file: "index.html"
+        file: "index-shadow.html"
         fields:
           - name: "title"
             label: "Site title"
             widget: "string"
           - name: "image"
-            label: "Site iamge"
+            label: "Site image"
             widget: "image"
