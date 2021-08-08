@@ -5,13 +5,16 @@ backend:
 media_folder: images/uploads
 
 collections:
-  - name: "main"
-    label: "Main page"
-    file: "index.html"
-    fields:
-      - name: "title"
-        label: "Site title"
-        widget: "string"
-      - name: "image"
-        label: "Site iamge"
-        widget: "image"
+  - name: "pages"
+    label: "Site pages"
+    files: 
+      - name: "home"
+        label: "Home page"
+        file: "index.html"
+        fields:
+          - name: "title"
+            label: "Site title"
+            widget: "string"
+          - name: "image"
+            label: "Site iamge"
+            widget: "image"
