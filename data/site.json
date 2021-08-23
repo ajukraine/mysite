@@ -1,0 +1,9 @@
+{
+    "message": "Hello from Json!",
+    "experience": {
+        "roles": [
+            { "name": "Software Developer" },
+            { "name": "Tech Lead" }
+        ]
+    }
+}
