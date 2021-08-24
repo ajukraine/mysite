@@ -10,6 +10,8 @@
   "type": "module",
   "devDependencies": {
     "html-webpack-plugin": "^5.3.2",
+    "image-minimizer-webpack-plugin": "^2.2.0",
+    "png-to-jpeg": "^1.0.1",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.0.0"
