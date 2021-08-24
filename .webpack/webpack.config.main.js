@@ -1,19 +1,9 @@
-import { resolve, dirname } from 'path';
-import { fileURLToPath } from 'url';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ImageMinimizerPlugin from 'image-minimizer-webpack-plugin';
-import pngToJpeg from 'png-to-jpeg';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 export default {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.js',
-    devtool: 'inline-source-map',
-    devServer: {
-        static: './dist'
-    },
     plugins: [
         new HtmlWebpackPlugin({
             hash: true,
@@ -22,7 +12,6 @@ export default {
     ],
     output: {
         filename: 'main.js',
-        path: resolve(__dirname, 'dist'),
         clean: true
     },
     module: {
