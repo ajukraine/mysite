@@ -1,5 +1,4 @@
 import SiteData from './site.json'
-import Banner from './banner.png'
 
 function renderDataJson(json) {
     let section = document.createElement("section");
@@ -10,5 +9,4 @@ function renderDataJson(json) {
     document.querySelector("main").prepend(section);
 }
 
-document.querySelector("img#banner").src = Banner;
 renderDataJson(SiteData);

@@ -17,6 +17,10 @@ export default {
     module: {
         rules: [
             {
+                test: /\.(html)$/,
+                use: ['html-loader']
+            },
+            {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 type: "asset",
             },
