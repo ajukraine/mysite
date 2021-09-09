@@ -1,12 +1,7 @@
 import SiteData from './site.json'
+import React from "react"
+import ReactDom from "react-dom"
+import App from "./App.js"
+import "./App.css"
 
-function renderDataJson(json) {
-    let section = document.createElement("section");
-    let text = document.createElement("pre");
-    text.innerText = JSON.stringify(json, null, 2);
-
-    section.append(text);
-    document.querySelector("main").prepend(section);
-}
-
-renderDataJson(SiteData);
+ReactDom.render(<App />, document.getElementById("app"));
