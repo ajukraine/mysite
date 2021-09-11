@@ -1,6 +1,6 @@
-import React from "react";
 import SiteDate from "./site.json";
 import "./App.css";
+import { h } from "preact"
 
 function App() {
   return (

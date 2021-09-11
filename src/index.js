@@ -1,6 +1,8 @@
-import App      from "./App.js";
-import React    from "react";
-import ReactDom from "react-dom";
+import App from "./App.js";
 import SiteData from "./site.json";
+import { h, render } from "preact";
 
-ReactDom.render(<App />, document.getElementById("app"));
+export default () => {
+  render(<App />, document.getElementById("app"));
+};
+
