@@ -4,16 +4,17 @@ import ImageMinimizerPlugin from "image-minimizer-webpack-plugin";
 export default {
   mode: "production",
   entry: "./src/index.js",
+  output: {
+    // filename: "main.js",
+    clean: true,
+  },
   plugins: [
     new HtmlWebpackPlugin({
       hash: true,
       template: "!!html-loader!prerender-loader!./src/index.html",
+      inject: false,
     }),
   ],
-  output: {
-    filename: "main.js",
-    clean: true,
-  },
   module: {
     rules: [
       {
